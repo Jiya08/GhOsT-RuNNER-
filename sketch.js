@@ -50,7 +50,7 @@ function draw() {
     }
     //write the code to make the ghost jump when you press the space key
     if (keyDown("space")) {
-      ghost.velocityY = ghost.velocityY - 2;
+      ghost.velocityY = -10;
     }
 
     ghost.velocityY = ghost.velocityY + 0.8
@@ -91,7 +91,7 @@ function spawnDoors() {
     invisibleBlock.height = 2;
 
     //spawn the door at a random x position on the tower
-    door.x = Math.round(random(10, 50));
+    door.x = Math.round(random(150, 450));
     //assign the x position of climber as x position of the door
     climber.x = door.x
     //assign the x position of invisibleBlock as x position of the door
